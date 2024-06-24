@@ -26,7 +26,7 @@ public class EmailService {
     @Autowired
     private NoticiaService noticiaService;
 
-    @Scheduled(cron = "0 14 18 * * ?")//ALTERE AQUI A DATA E HORA QUE OS EMAILS SERÃO ENVIADOS(legenda "0 33 15 * * ?" =(segundo minuto hora diaDoMes Mes diaDaSemana))
+    @Scheduled(cron = "0 00 08 * * ?")//ALTERE AQUI A DATA E HORA QUE OS EMAILS SERÃO ENVIADOS(legenda "0 33 15 * * ?" =(segundo minuto hora diaDoMes Mes diaDaSemana))
     public void enviarNoticiasDiarias() {
         List<Cliente> clientes = clienteService.buscarTodosClientes();
         List<Noticia> noticias = noticiaService.buscarNoticiasNaoProcessadas();
