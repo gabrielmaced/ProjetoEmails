@@ -34,7 +34,7 @@ Pode ou nao ter link
 {
     "titulo": "Sorteio",
     "descricao": "Bilhete da Sorte",
-    "link": "sorteio.com.br"
+    "link": www.google.com.br"
 }
 
 
